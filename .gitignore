@@ -1,0 +1,16 @@
+# IDE
+.idea/
+*.iml
+*.code-workspace
+
+# Build artifacts
+*.zip
+node_modules/
+dist/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Agent scratch files (keep .ai/ tracked)
+.ai/agents/*.tmp
