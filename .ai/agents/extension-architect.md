@@ -66,3 +66,4 @@
   - Modernized execution with `beforeinput` (`formatBold`) and safe `document.execCommand` fallback.
   - Removed all debug logging statements (`console.log`).
 - *[Phase 6 - TDD Verification]* Created `.ai/evals/content-script.test.js` validating topology, manifest schema, shortcut detection across OS platforms, bold-only enforcement, DOM resilience, and edge case resilience. Ran test suite via Node test runner (7/7 passed).
+- *[Phase 7 - Canonical Store URL & Bun Runtime]* Updated `src/manifest.json` and `src/background.js` with canonical Chrome Web Store URL (`https://chromewebstore.google.com/detail/linkedin-rich-text-shortc/pcnojfgoolblflomemlceeemfjdmneia`). Rebuilt production zip package at `/dist/LinkedIn-Rich-Text-Shortcuts-v2.0.0.zip`. Verified full test suite execution using Bun v1.4.4 (7/7 passed in 139ms).

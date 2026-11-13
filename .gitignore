@@ -13,4 +13,5 @@ Thumbs.db
 .DS_Store
 
 # Agent scratch files (keep .ai/ tracked)
+AGENTS.md
 .ai/agents/*.tmp
