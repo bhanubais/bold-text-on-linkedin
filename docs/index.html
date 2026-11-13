@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bold Text on LinkedIn - Native Formatting in 1 Second</title>
+  <meta name="description" content="The featherweight Chrome extension that restores native Ctrl+B and Cmd+B bold text formatting in LinkedIn's editor. Zero data collection, under 50 KB.">
+  <link rel="canonical" href="https://bhanubais.github.io/bold-text-on-linkedin/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bold Text on LinkedIn - Native Formatting in 1 Second">
+  <meta property="og:description" content="Press Ctrl+B or Cmd+B to bold text directly inside LinkedIn. No copy-pasting from generator websites. 100% private and accessible.">
+  <meta property="og:url" content="https://bhanubais.github.io/bold-text-on-linkedin/">
+  <meta property="og:image" content="https://bhanubais.github.io/bold-text-on-linkedin/assets/hero-3d-card.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bold Text on LinkedIn - Native Formatting in 1 Second">
+  <meta name="twitter:description" content="Press Ctrl+B or Cmd+B to bold text directly inside LinkedIn. Featherweight, private, and fully accessible.">
+  <meta name="twitter:image" content="https://bhanubais.github.io/bold-text-on-linkedin/assets/hero-3d-card.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icon-16.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand" aria-label="LinkedIn Rich Text Shortcuts Home">
+        <img src="assets/icon-32.png" alt="LinkedIn Bold Extension Logo" width="32" height="32">
+        <div>
+          <span>LinkedIn Bold</span>
+          <span class="brand-tagline">Rich Text Shortcuts</span>
+        </div>
+      </a>
+
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#demo" class="nav-link">Interactive Demo</a></li>
+        <li><a href="#why-native" class="nav-link">Why Native Bold</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="privacy.html" class="nav-link">Privacy Policy</a></li>
+        <li><a href="support.html" class="nav-link">Support</a></li>
+        <li><a href="changelog.html" class="nav-link">Changelog</a></li>
+        <li>
+          <a href="https://github.com/bhanubais/bold-text-on-linkedin" class="nav-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="https://chromewebstore.google.com/detail/linkedin-rich-text-shortc/pcnojfgoolblflomemlceeemfjdmneia" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          </svg>
+          Add to Chrome
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">
+        <span>✨ Version 2.0.0 is live with native macOS Cmd+B support</span>
+      </div>
+
+      <h1>Bold on LinkedIn in <span class="hero-highlight">1 Second</span></h1>
+      <p class="hero-subtitle">
+        Highlight your text and press <kbd class="keycap" id="heroKeyMod">Ctrl</kbd> + <kbd class="keycap">B</kbd>. No copy-pasting from generator websites. No accessibility issues. Just clean native formatting.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://chromewebstore.google.com/detail/linkedin-rich-text-shortc/pcnojfgoolblflomemlceeemfjdmneia" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          </svg>
+          Add to Chrome - Free Forever
+        </a>
+        <a href="#demo" class="btn btn-secondary btn-lg">
+          Try Live Demo
+        </a>
+      </div>
+
+      <div class="hero-trust-row">
+        <div class="trust-item">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <span>Zero data collection</span>
+        </div>
+        <div class="trust-item">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <span>Mac & Windows support</span>
+        </div>
+        <div class="trust-item">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <span>Under 50 KB size</span>
+        </div>
+        <div class="trust-item">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <span>Manifest V3 compliant</span>
+        </div>
+      </div>
+
+      <div class="hero-media-wrap">
+        <img src="assets/hero-3d-card.png" alt="Make LinkedIn Posts Stand Out with Bold Shortcut" width="860" height="547">
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Demo Simulator -->
+  <section class="section section-bg-muted" id="demo">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Hands-On Playground</span>
+        <h2>Try It Live in Your Browser</h2>
+        <p>
+          Highlight any phrase in the mock LinkedIn editor below. Press <kbd class="keycap" id="demoKeyMod">Ctrl</kbd> + <kbd class="keycap">B</kbd> to toggle bold text formatting instantly.
+        </p>
+      </div>
+
+      <div class="simulator-card">
+        <div class="simulator-chrome">
+          <div class="simulator-tabs">
+            <div class="window-dots">
+              <span class="dot" style="background:#EF4444;"></span>
+              <span class="dot" style="background:#F59E0B;"></span>
+              <span class="dot" style="background:#10B981;"></span>
+            </div>
+            <span class="simulator-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#0A66C2">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.86 0 1.54-.68 1.54-1.54s-.68-1.54-1.54-1.54A1.54 1.54 0 0 0 4.92 7.22c0 .86.68 1.54 1.54 1.54m1.4 10.74v-8.37H5.06v8.37h2.8z"/>
+              </svg>
+              LinkedIn Post Composer Simulator
+            </span>
+          </div>
+
+          <div class="simulator-keys-indicator">
+            <span>Shortcut:</span>
+            <kbd class="keycap" id="liveKeyMod">Ctrl</kbd>
+            <span>+</span>
+            <kbd class="keycap" id="liveKeyB">B</kbd>
+          </div>
+        </div>
+
+        <div class="simulator-body">
+          <div class="simulator-author-row">
+            <div class="simulator-avatar">YOU</div>
+            <div class="simulator-author-meta">
+              <h4>Your Name</h4>
+              <p>Post to Anyone • 1st</p>
+            </div>
+          </div>
+
+          <div class="simulator-editor" id="simulatorEditor" contenteditable="true" spellcheck="false" aria-label="Editable LinkedIn demo text">
+Formatting shouldn't be painful. With native bold formatting, your hooks stand out, your key insights get noticed, and your readers stay engaged. Try highlighting this sentence and pressing your shortcut right now!
+          </div>
+
+          <div class="simulator-controls">
+            <div class="simulator-hint">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+              </svg>
+              <span>Select any text above, then use your keyboard or the button</span>
+            </div>
+
+            <div class="simulator-btn-group">
+              <span class="simulator-toast" id="simulatorToast">✓ Bold toggled!</span>
+              <button type="button" class="btn btn-secondary" id="btnResetDemo">Reset Text</button>
+              <button type="button" class="btn btn-primary" id="btnBoldDemo">
+                <strong>B</strong> Bold Selection
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Unicode Trap Comparison Section -->
+  <section class="section" id="why-native">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Truth in Formatting</span>
+        <h2>The Unicode Trap: Why Native Bold Matters</h2>
+        <p>
+          Third-party text generators do not create real bold letters. They replace normal characters with obscure mathematical Unicode symbols. Here is why that breaks your posts.
+        </p>
+      </div>
+
+      <div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature & Experience</th>
+              <th class="col-native">Native Bold (This Extension)</th>
+              <th class="col-unicode">Fake Unicode (YayText, LingoJam)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Screen Reader Accessibility</strong>
+                <div class="cell-desc">How visually impaired users hear your post</div>
+              </td>
+              <td>
+                <span class="status-badge good">✓ Fully Accessible</span>
+                <div class="cell-desc">Screen readers pronounce words naturally with normal cadence and emphasis.</div>
+              </td>
+              <td>
+                <span class="status-badge bad">✕ Broken Speech</span>
+                <div class="cell-desc">Screen readers spell out each character as "Mathematical Bold Capital H..." making your content unlistenable.</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>LinkedIn Search & Discovery</strong>
+                <div class="cell-desc">Whether your post appears in search results</div>
+              </td>
+              <td>
+                <span class="status-badge good">✓ 100% Indexed</span>
+                <div class="cell-desc">Standard characters are fully indexed by LinkedIn's search engine and feed algorithm.</div>
+              </td>
+              <td>
+                <span class="status-badge bad">✕ Invisible to Search</span>
+                <div class="cell-desc">Unicode glyphs do not match normal alphabet queries. Your keywords become unsearchable.</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Workflow Speed</strong>
+                <div class="cell-desc">Time required to format your post</div>
+              </td>
+              <td>
+                <span class="status-badge good">✓ Instant (0.5s)</span>
+                <div class="cell-desc">Select text, press Ctrl+B or Cmd+B, and keep writing. Zero context switching.</div>
+              </td>
+              <td>
+                <span class="status-badge bad">✕ Slow (15s+)</span>
+                <div class="cell-desc">Open a new tab, navigate to generator, paste text, copy result, paste back into LinkedIn.</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Mobile & Cross-Platform Display</strong>
+                <div class="cell-desc">Consistency across devices and operating systems</div>
+              </td>
+              <td>
+                <span class="status-badge good">✓ Native Typography</span>
+                <div class="cell-desc">Uses LinkedIn's native font family. Renders crisply on every iPhone, Android, and PC.</div>
+              </td>
+              <td>
+                <span class="status-badge bad">✕ Risk of Empty Boxes</span>
+                <div class="cell-desc">Unsupported Unicode symbols often render as missing glyphs or misaligned characters.</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Reversibility & Editing</strong>
+                <div class="cell-desc">Fixing a typo or removing formatting</div>
+              </td>
+              <td>
+                <span class="status-badge good">✓ Instant Toggle</span>
+                <div class="cell-desc">Press Ctrl+B or Cmd+B again to unbold. Edit text directly without starting over.</div>
+              </td>
+              <td>
+                <span class="status-badge bad">✕ Must Retype</span>
+                <div class="cell-desc">You cannot easily undo converted characters without retyping or running back to the website.</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Features Grid -->
+  <section class="section section-bg-muted" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Built for Performance</span>
+        <h2>Engineered for Power Creators</h2>
+        <p>
+          Everything you need for clean, fast LinkedIn formatting. Nothing you don't.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M6 12h.01M10 12h.01M14 12h.01M18 12h.01M8 16h8"></path>
+            </svg>
+          </div>
+          <h3>Mac & PC Native Support</h3>
+          <p>
+            Full keyboard shortcut support across operating systems. Use <kbd class="keycap">Cmd</kbd> + <kbd class="keycap">B</kbd> on macOS and <kbd class="keycap">Ctrl</kbd> + <kbd class="keycap">B</kbd> on Windows and Linux.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3>Zero Data Collection</h3>
+          <p>
+            Runs 100% locally in your browser. No telemetry, no keystroke tracking, no analytics, and zero external network requests.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+            </svg>
+          </div>
+          <h3>Under 50 KB & Featherweight</h3>
+          <p>
+            Pure vanilla JavaScript. Zero frameworks, zero dependencies, and instant execution that never slows down your browser tabs.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <h3>Universal Editor Support</h3>
+          <p>
+            Works everywhere LinkedIn accepts bold formatting: main feed posts, articles, comments, and replies.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <h3>Single Host Permission</h3>
+          <p>
+            Strictly limited to <code>https://www.linkedin.com/*</code>. The extension cannot view or interact with any other website you visit.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3>Native Tiptap Integration</h3>
+          <p>
+            Integrates directly with LinkedIn's internal ProseMirror and Tiptap DOM architecture for clean, standards-compliant markup.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Editor Showcase -->
+  <section class="section">
+    <div class="container">
+      <div class="showcase-grid">
+        <div class="showcase-content">
+          <span class="section-badge">Seamless Workflow</span>
+          <h2>Feels like LinkedIn built it themselves.</h2>
+          <p>
+            Most browser extensions add cluttered toolbars, popups, or floating menus that slow you down. LinkedIn Rich Text Shortcuts works entirely in the background.
+          </p>
+          <ul class="showcase-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Zero UI clutter: no buttons or sidebars covering your post</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Maintains your typing flow and keeps your selection active</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span>Instant toggle: unbold just as fast as you bolded</span>
+            </li>
+          </ul>
+          <a href="https://chromewebstore.google.com/detail/linkedin-rich-text-shortc/pcnojfgoolblflomemlceeemfjdmneia" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            Get the Extension
+          </a>
+        </div>
+        <div class="showcase-image-card">
+          <img src="assets/editor-preview.png" alt="LinkedIn editor formatted with bold text" width="640" height="440">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-bg-muted" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Frequently Asked Questions</span>
+        <h2>Got questions? We have answers.</h2>
+        <p>Everything you need to know about the extension, compatibility, and privacy.</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-card">
+          <h3 class="faq-question">Why only bold? What about italic or underline?</h3>
+          <div class="faq-answer">
+            LinkedIn's post editor natively supports bold formatting through its internal Tiptap rich text engine. It does not support native italic or underline styling. Rather than injecting hacky Unicode symbols that ruin accessibility and search indexing, this extension sticks to clean, native bold formatting.
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <h3 class="faq-question">Does this extension work on Mac and Windows?</h3>
+          <div class="faq-answer">
+            Yes. Version 2.0.0 provides full cross-platform shortcut detection. Use <kbd class="keycap">Cmd</kbd> + <kbd class="keycap">B</kbd> on macOS and <kbd class="keycap">Ctrl</kbd> + <kbd class="keycap">B</kbd> on Windows and Linux.
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <h3 class="faq-question">Can the extension see or store my LinkedIn posts?</h3>
+          <div class="faq-answer">
+            No. The extension runs 100% locally on your computer. It never transmits data over the internet, maintains no servers, logs no keystrokes, and collects zero analytics. Review our full <a href="privacy.html">Privacy Policy</a> for complete details.
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <h3 class="faq-question">Does it work in comments and replies?</h3>
+          <div class="faq-answer">
+            Yes. The extension activates anywhere LinkedIn provides an active rich text editor, including main feed posts, shared post drafts, comments, and replies.
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <h3 class="faq-question">Is the extension free?</h3>
+          <div class="faq-answer">
+            Yes. LinkedIn Rich Text Shortcuts is completely free, open source under the MIT License, and built for the community.
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <h3 class="faq-question">What if the shortcut stops working on a page?</h3>
+          <div class="faq-answer">
+            If you just installed or updated the extension, refresh your LinkedIn tab once. If you run into any issues, check out our <a href="support.html">Support and Troubleshooting Guide</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Ready for Effortless Bold Formatting?</h2>
+        <p>
+          Join professionals and creators saving time on every LinkedIn post. Clean typography, zero bloat, and total privacy.
+        </p>
+        <a href="https://chromewebstore.google.com/detail/linkedin-rich-text-shortc/pcnojfgoolblflomemlceeemfjdmneia" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          </svg>
+          Add to Chrome - Free
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>
+            <img src="assets/icon-32.png" alt="Logo" width="24" height="24">
+            LinkedIn Bold
+          </h4>
+          <p>
+            The featherweight Chrome extension for native rich text shortcuts on LinkedIn. Built with respect for privacy and web standards.
+          </p>
+        </div>
+
+        <div class="footer-group">
+          <h5>Product</h5>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#demo">Interactive Demo</a></li>
+            <li><a href="#why-native">Why Native Bold</a></li>
+            <li><a href="changelog.html">Changelog (v2.0.0)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-group">
+          <h5>Documentation</h5>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="support.html">Support & FAQ</a></li>
+            <li><a href="https://github.com/bhanubais/bold-text-on-linkedin" target="_blank" rel="noopener noreferrer">Source Code</a></li>
+            <li><a href="https://github.com/bhanubais/bold-text-on-linkedin/issues" target="_blank" rel="noopener noreferrer">Report an Issue</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-group">
+          <h5>Chrome Web Store</h5>
+          <ul class="footer-links">
+            <li><a href="https://chromewebstore.google.com/detail/linkedin-rich-text-shortc/pcnojfgoolblflomemlceeemfjdmneia" target="_blank" rel="noopener noreferrer">Official Store Listing</a></li>
+            <li><a href="https://chromewebstore.google.com/detail/linkedin-rich-text-shortc/pcnojfgoolblflomemlceeemfjdmneia/reviews" target="_blank" rel="noopener noreferrer">Leave a Review</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Bhanu Bais. Open source under the MIT License.
+        </div>
+        <div>
+          Not affiliated with LinkedIn Corporation.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla JS Interactive Simulator Script -->
+  <script>
+    (function() {
+      // OS Detection for key label
+      const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0 || navigator.userAgent.toUpperCase().indexOf('MAC') >= 0;
+      const keyModText = isMac ? 'Cmd' : 'Ctrl';
+
+      const heroKeyMod = document.getElementById('heroKeyMod');
+      const demoKeyMod = document.getElementById('demoKeyMod');
+      const liveKeyMod = document.getElementById('liveKeyMod');
+      const liveKeyB = document.getElementById('liveKeyB');
+
+      if (heroKeyMod) heroKeyMod.textContent = keyModText;
+      if (demoKeyMod) demoKeyMod.textContent = keyModText;
+      if (liveKeyMod) liveKeyMod.textContent = keyModText;
+
+      // Mobile nav toggle
+      const mobileNavToggle = document.getElementById('mobileNavToggle');
+      const navLinks = document.getElementById('navLinks');
+      if (mobileNavToggle && navLinks) {
+        mobileNavToggle.addEventListener('click', function() {
+          navLinks.classList.toggle('nav-open');
+        });
+      }
+
+      // Simulator Elements
+      const editor = document.getElementById('simulatorEditor');
+      const btnBold = document.getElementById('btnBoldDemo');
+      const btnReset = document.getElementById('btnResetDemo');
+      const toast = document.getElementById('simulatorToast');
+
+      const initialDemoText = "Formatting shouldn't be painful. With native bold formatting, your hooks stand out, your key insights get noticed, and your readers stay engaged. Try highlighting this sentence and pressing your shortcut right now!";
+
+      function showToast(msg) {
+        if (!toast) return;
+        toast.textContent = msg || "✓ Bold toggled!";
+        toast.classList.add('show');
+        setTimeout(function() {
+          toast.classList.remove('show');
+        }, 1600);
+      }
+
+      function executeBold() {
+        document.execCommand('bold', false, null);
+        showToast("✓ Bold toggled!");
+      }
+
+      if (btnBold) {
+        btnBold.addEventListener('click', function() {
+          editor.focus();
+          executeBold();
+        });
+      }
+
+      if (btnReset) {
+        btnReset.addEventListener('click', function() {
+          editor.innerHTML = initialDemoText;
+          showToast("↺ Text reset");
+        });
+      }
+
+      // Intercept Ctrl+B / Cmd+B inside the simulator editor
+      if (editor) {
+        editor.addEventListener('keydown', function(e) {
+          const isMod = isMac ? e.metaKey : e.ctrlKey;
+
+          if (isMod) {
+            liveKeyMod.classList.add('keycap-active');
+          }
+
+          if (e.key.toLowerCase() === 'b') {
+            liveKeyB.classList.add('keycap-active');
+          }
+
+          if (isMod && e.key.toLowerCase() === 'b') {
+            e.preventDefault();
+            executeBold();
+          }
+        });
+
+        window.addEventListener('keyup', function(e) {
+          if (!e.metaKey && !e.ctrlKey) {
+            liveKeyMod.classList.remove('keycap-active');
+          }
+          if (e.key.toLowerCase() === 'b') {
+            liveKeyB.classList.remove('keycap-active');
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

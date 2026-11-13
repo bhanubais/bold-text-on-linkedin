@@ -58,12 +58,12 @@ Acknowledge initialization by stating the current macro-state and the immediate 
 | **Track 3: Brand & Visuals** | `brand-designer` | `/design/` | `@.ai/agents/brand-designer.md` | 🟡 Remediating (`feat/design-assets-migration`) | Purging synthetic HTML renders, promoting authentic 3D masters from `/images/` into `/design/store-screenshots/` and `/design/promo-tiles/`. |
 | **Track 4: Growth Marketing** | `growth-hacker` | `/marketing/` | `@.ai/agents/growth-hacker.md` | 🟢 Completed | 5 LinkedIn posts, Twitter 7-tweet launch thread, complete Product Hunt launch kit, and Day 1-14 master playbook in `marketing/README.md`. |
 | **Track 5: Repository Documentation** | `docs-copywriter` | Root `/` | `@.ai/agents/docs-copywriter.md` | 🟢 Completed | Official root `README.md`: High-visibility hero banner + badges + Unicode Trap comparison + shortcut table + Bun developer quickstart + architecture & privacy disclosures. |
-| **Track 6: Web Systems & GitHub Pages** | `web-architect` | `/docs/` | `@.ai/agents/web-architect.md` | ⚪ Queued for Next PR | Complete static website in `/docs/` for free GitHub Pages hosting (`index.html`, `privacy.html`, `support.html`, `changelog.html`). |
+| **Track 6: Web Systems & GitHub Pages** | `web-architect` | `/docs/` | `@.ai/agents/web-architect.md` | 🟢 Completed (`feat/github-pages-website`) | Complete static website in `/docs/` for free GitHub Pages hosting (`index.html`, `privacy.html`, `support.html`, `changelog.html`). |
 
 ---
 
 ## 4. Current Working State & Active Branch
 
-- **Active Branch:** `feat/design-assets-migration`
-- **Rule:** All work happens in isolated feature branches. Upon completion, we push the branch and generate a Pull Request link for the founder to review and merge into `main` to accumulate event points.
-- **Immediate Task:** Execute asset remediation with the **Creative Director (`brand-designer`)** on branch `feat/design-assets-migration`.
+- **Active Branch:** `feat/github-pages-website`
+- **Rule:** Feature branch isolation. Once completed and tested, we push the branch and generate Pull Request #2.
+- **Immediate Task:** Construct the responsive website in `/docs/` with the **Web Systems Architect (`web-architect`)**.

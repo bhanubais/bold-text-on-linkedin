@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changelog & Release History - LinkedIn Rich Text Shortcuts</title>
+  <meta name="description" content="Detailed release notes and version history for LinkedIn Rich Text Shortcuts. Review new features, architectural improvements, and security enhancements.">
+  <link rel="canonical" href="https://bhanubais.github.io/bold-text-on-linkedin/changelog.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Changelog - LinkedIn Rich Text Shortcuts">
+  <meta property="og:description" content="Explore release history and updates for LinkedIn Rich Text Shortcuts.">
+  <meta property="og:url" content="https://bhanubais.github.io/bold-text-on-linkedin/changelog.html">
+  <meta property="og:image" content="https://bhanubais.github.io/bold-text-on-linkedin/assets/hero-3d-card.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icon-16.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand" aria-label="LinkedIn Rich Text Shortcuts Home">
+        <img src="assets/icon-32.png" alt="LinkedIn Bold Extension Logo" width="32" height="32">
+        <div>
+          <span>LinkedIn Bold</span>
+          <span class="brand-tagline">Rich Text Shortcuts</span>
+        </div>
+      </a>
+
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#features" class="nav-link">Features</a></li>
+        <li><a href="index.html#demo" class="nav-link">Interactive Demo</a></li>
+        <li><a href="index.html#why-native" class="nav-link">Why Native Bold</a></li>
+        <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+        <li><a href="privacy.html" class="nav-link">Privacy Policy</a></li>
+        <li><a href="support.html" class="nav-link">Support</a></li>
+        <li><a href="changelog.html" class="nav-link active">Changelog</a></li>
+        <li>
+          <a href="https://github.com/bhanubais/bold-text-on-linkedin" class="nav-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="https://chromewebstore.google.com/detail/linkedin-rich-text-shortc/pcnojfgoolblflomemlceeemfjdmneia" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          </svg>
+          Add to Chrome
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container container-narrow">
+      <span class="section-badge">Version History</span>
+      <h1>Changelog & Updates</h1>
+      <p>
+        All notable product enhancements, architectural upgrades, and bug fixes.
+      </p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="page-content">
+    <div class="container container-narrow">
+      <div class="article-body">
+
+        <div class="timeline">
+
+          <!-- Version 2.0.0 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <span class="timeline-badge">Version 2.0.0</span>
+              <span class="timeline-date">November 13, 2026</span>
+            </div>
+
+            <h2 style="margin-top: 0.75rem;">Major Rebuild: macOS Support & Manifest V3</h2>
+            <p>
+              Version 2.0.0 is a complete architectural rebuild of the extension, bringing first-class Mac support, Google Manifest V3 compliance, and a modern DOM selector engine.
+            </p>
+
+            <h3>Added</h3>
+            <ul>
+              <li><strong>Native macOS Shortcut Support:</strong> Added native <kbd class="keycap">Cmd</kbd> + <kbd class="keycap">B</kbd> keyboard handling for Mac users alongside <kbd class="keycap">Ctrl</kbd> + <kbd class="keycap">B</kbd> for Windows and Linux.</li>
+              <li><strong>Manifest V3 Specification:</strong> Rebuilt the extension under Google's modern Manifest V3 platform with an ephemeral background service worker.</li>
+              <li><strong>High-Resolution Icons:</strong> Modernized brand icon assets rendered at 16x16, 32x32, 48x48, and 128x128 pixels for crisp display on high-DPI and Retina monitors.</li>
+              <li><strong>Browser Toolbar Action:</strong> Clicking the extension icon in the Chrome toolbar opens the official Chrome Web Store listing for one-click reviews and documentation.</li>
+              <li><strong>Automated Test Suite:</strong> Added comprehensive multi-platform test coverage running under the Bun test runner.</li>
+            </ul>
+
+            <h3>Changed</h3>
+            <ul>
+              <li><strong>Resilient DOM Detection:</strong> Upgraded editor detection to support modern LinkedIn Tiptap and ProseMirror composers, comments, and replies.</li>
+              <li><strong>Package Boundary Topology:</strong> Re-architected project structure into a clean <code>/src/</code> production bundle.</li>
+              <li><strong>Production Code Hygiene:</strong> Stripped all debug console logs for zero runtime overhead.</li>
+            </ul>
+
+            <h3>Security & Privacy</h3>
+            <ul>
+              <li><strong>Zero Elevated Permissions:</strong> Declares strictly single-host access (<code>https://www.linkedin.com/*</code>) with no storage, tabs, or broad web request permissions.</li>
+              <li><strong>100% On-Device Execution:</strong> Operates entirely offline with zero remote telemetry or tracking scripts.</li>
+            </ul>
+          </div>
+
+          <!-- Version 1.0.0 -->
+          <div class="timeline-item">
+            <div class="timeline-dot" style="background: #94A3B8; box-shadow: 0 0 0 2px #CBD5E1;"></div>
+            <div>
+              <span class="timeline-badge" style="background: #F1F5F9; color: #475569;">Version 1.0.0</span>
+              <span class="timeline-date">October 7, 2026</span>
+            </div>
+
+            <h2 style="margin-top: 0.75rem;">Initial Release</h2>
+            <p>
+              The original prototype introducing rich text bold formatting to LinkedIn posts.
+            </p>
+
+            <h3>Added</h3>
+            <ul>
+              <li>Basic <kbd class="keycap">Ctrl</kbd> + <kbd class="keycap">B</kbd> bold formatting shortcut for Windows users in the main LinkedIn post composer.</li>
+              <li>Initial Chrome Web Store launch.</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>
+            <img src="assets/icon-32.png" alt="Logo" width="24" height="24">
+            LinkedIn Bold
+          </h4>
+          <p>
+            The featherweight Chrome extension for native rich text shortcuts on LinkedIn. Built with respect for privacy and web standards.
+          </p>
+        </div>
+
+        <div class="footer-group">
+          <h5>Product</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#demo">Interactive Demo</a></li>
+            <li><a href="index.html#why-native">Why Native Bold</a></li>
+            <li><a href="changelog.html">Changelog (v2.0.0)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-group">
+          <h5>Documentation</h5>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="support.html">Support & FAQ</a></li>
+            <li><a href="https://github.com/bhanubais/bold-text-on-linkedin" target="_blank" rel="noopener noreferrer">Source Code</a></li>
+            <li><a href="https://github.com/bhanubais/bold-text-on-linkedin/issues" target="_blank" rel="noopener noreferrer">Report an Issue</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-group">
+          <h5>Chrome Web Store</h5>
+          <ul class="footer-links">
+            <li><a href="https://chromewebstore.google.com/detail/linkedin-rich-text-shortc/pcnojfgoolblflomemlceeemfjdmneia" target="_blank" rel="noopener noreferrer">Official Store Listing</a></li>
+            <li><a href="https://chromewebstore.google.com/detail/linkedin-rich-text-shortc/pcnojfgoolblflomemlceeemfjdmneia/reviews" target="_blank" rel="noopener noreferrer">Leave a Review</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Bhanu Bais. Open source under the MIT License.
+        </div>
+        <div>
+          Not affiliated with LinkedIn Corporation.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileNavToggle = document.getElementById('mobileNavToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (mobileNavToggle && navLinks) {
+      mobileNavToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('nav-open');
+      });
+    }
+  </script>
+</body>
+</html>
