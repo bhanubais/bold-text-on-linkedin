@@ -58,16 +58,13 @@ Acknowledge initialization by stating the current macro-state and the immediate 
 | **Track 3: Brand & Visuals** | `brand-designer` | `/design/` | `@.ai/agents/brand-designer.md` | 🟢 Completed | Authentic 3D masters from `/images/` promoted to `/design/store-screenshots/` and `/design/promo-tiles/`, complete asset catalog in `design/README.md`. |
 | **Track 4: Growth Marketing** | `growth-hacker` | `/marketing/` | `@.ai/agents/growth-hacker.md` | 🟢 Completed | 5 LinkedIn posts, Twitter 7-tweet launch thread, complete Product Hunt launch kit, and Day 1-14 master playbook in `marketing/README.md`. |
 | **Track 5: Repository Documentation** | `docs-copywriter` | Root `/` | `@.ai/agents/docs-copywriter.md` | 🟢 Completed | Official root `README.md`: High-visibility hero banner + badges + Unicode Trap comparison + shortcut table + Bun developer quickstart + architecture & privacy disclosures. |
-| **Track 6: Web Systems & GitHub Pages** | `web-architect` | `/docs/` | `@.ai/agents/web-architect.md` | 🟢 Completed | Complete static website in `/docs/` for free GitHub Pages hosting (`index.html`, `privacy.html`, `support.html`, `changelog.html`). |
+| **Track 6: Web Systems & GitHub Pages** | `web-architect` | `/docs/` | `@.ai/agents/web-architect.md` | 🟢 Completed | Polished static website in `/docs/` with uncluttered single-line header, 4-item core nav, high-res 1571x1001 hero graphic, and live interactive shortcut simulator. |
 
 ---
 
 ## 4. Current Working State & Active Branch
 
-- **Active Branch:** `main` (clean, all feature PRs merged)
-- **Macro Status:** 🟢 All 6 Specialized Tracks Completed & Verified
-- **Ready Operations:**
-  1. Chrome Web Store v2.0.0 package submission (`dist/LinkedIn-Rich-Text-Shortcuts-v2.0.0.zip`).
-  2. GitHub Pages deployment from `/docs/` branch `main`.
-  3. Organic Growth Campaign rollout (`marketing/README.md`).
+- **Active Branch:** `feat/website-header-hero-refinement`
+- **Status:** All website header & hero refinements completed and visually verified across desktop and mobile viewports.
+- **Immediate Founder Action:** Push branch and open Pull Request #3 on GitHub to merge into `main` and earn event points.
 
