@@ -44,7 +44,7 @@ End-to-End Venture: this project spans engineering, Chrome Web Store listing, ma
 | Creative Director & Brand Designer | `/design/` | `@.ai/agents/brand-designer.md` | 🟢 Completed |
 | Organic Growth Hacker | `/marketing/` | `@.ai/agents/growth-hacker.md` | 🟢 Completed |
 | Repository & Docs Copywriter | Root `/` | `@.ai/agents/docs-copywriter.md` | 🟢 Completed |
-| Web Systems Architect | `/docs/` | `@.ai/agents/web-architect.md` | ⚪ Queued for Next PR |
+| Web Systems Architect | `/docs/` | `@.ai/agents/web-architect.md` | 🟢 Completed |
 
 ## Persona Library
 See `/.ai/personas/` for available expert mindsets.
