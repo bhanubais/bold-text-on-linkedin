@@ -55,12 +55,13 @@ Acknowledge initialization by stating the current macro-state and the immediate 
 |---|---|---|---|---|---|
 | **Track 1: Engineering** | `extension-architect` | `/src/` | `@.ai/agents/extension-architect.md` | 🟢 Completed | MV3 manifest, Mac `Cmd+B` support, resilient Tiptap DOM detection, zero permissions, 16/32/48/128px icons, `background.js` action handler, 7 Bun tests passing, packaged `dist/LinkedIn-Rich-Text-Shortcuts-v2.0.0.zip`. |
 | **Track 2: Store ASO & Trust** | `store-copywriter` | `/store-assets/` | `@.ai/agents/store-copywriter.md` | 🟢 Completed | `store-assets/description.md` (125/132 char short desc, keyword-rich copy), `store-assets/privacy-policy.md` (verified repo URLs, zero data collection), `store-assets/single-purpose.md` (CWS review & Safe Browsing justification), `store-assets/changelog.md`. |
-| **Track 3: Brand & Visuals** | `brand-designer` | `/design/` | `@.ai/agents/brand-designer.md` | 🟡 Provisioned | Active task queue: 1280x800 CWS screenshots, 440x280 / 920x680 / 1400x560 promo tiles, social banners, and master design spec sheet. |
-| **Track 4: Growth Marketing** | `growth-hacker` | `/marketing/` | `@.ai/agents/growth-hacker.md` | ⚪ Queued | Needs: LinkedIn founder launch post, before/after carousel text, distribution threads, Product Hunt launch checklist. |
+| **Track 3: Brand & Visuals** | `brand-designer` | `/design/` | `@.ai/agents/brand-designer.md` | 🟢 Completed | Full visual suite: 440x280 / 920x680 / 1400x560 promo tiles, 5x 1280x800 CWS store screenshots, social banners (LinkedIn, Twitter/X, Product Hunt), 5-slide viral carousel, and master design catalog in `design/README.md`. |
+| **Track 4: Growth Marketing** | `growth-hacker` | `/marketing/` | `@.ai/agents/growth-hacker.md` | 🟡 Ready to Provision | Needs: LinkedIn founder launch post, before/after carousel text, distribution threads, Product Hunt launch checklist. |
+| **Track 5: Repository Documentation** | `docs-copywriter` | Root `/` | `@.ai/agents/docs-copywriter.md` | ⚪ Queued in Pipeline | High-converting root `README.md`: Product showcase + badging + Bun developer setup + CWS install links. |
 
 ---
 
 ## 4. Current Working State & Immediate Next Step
 
-- **State:** Tracks 1 and 2 are 100% verified, refined, and completed.
-- **Immediate Next Step:** Spawn **Track 3: Creative Director & Brand Designer (`brand-designer`)** to construct CWS promotional tiles, high-fidelity store screenshots, and social creatives in `/design/`.
+- **State:** Tracks 1, 2, and 3 are 100% verified, rendered, and completed.
+- **Immediate Next Step:** Provision **Track 4: Organic Growth Hacker (`growth-hacker`)** to construct founder launch posts, viral carousels, and distribution sequences in `/marketing/`. Track 5 (root `README.md`) is queued in pipeline to follow.

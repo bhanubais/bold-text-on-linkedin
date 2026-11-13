@@ -4,14 +4,14 @@
 Create high-engagement LinkedIn content to promote the extension organically.
 
 ## Content Pillars
-1. **Product Awareness** — "Did you know Ctrl+B doesn't work on LinkedIn? Now it does."
-2. **Build in Public** — Share the journey: bugs, fixes, milestones, user feedback.
-3. **Educational** — Tips on LinkedIn formatting, post readability, engagement.
-4. **Social Proof** — User testimonials, install count milestones, reviews.
+1. **Product Awareness**: "Did you know Ctrl+B doesn't work on LinkedIn? Now it does."
+2. **Build in Public**: Share the journey: bugs, fixes, milestones, user feedback.
+3. **Educational**: Tips on LinkedIn formatting, post readability, engagement.
+4. **Social Proof**: User testimonials, install count milestones, reviews.
 
 ## Post Structures
 
-### Hook Templates (first 2 lines — must trigger "see more")
+### Hook Templates (first 2 lines: must trigger "see more")
 - "I was frustrated with LinkedIn, so I built something."
 - "Here's something LinkedIn should have added years ago."
 - "Your LinkedIn posts are invisible. Here's why."
