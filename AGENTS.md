@@ -42,7 +42,7 @@ End-to-End Venture: this project spans engineering, Chrome Web Store listing, ma
 | Store Copywriter & Trust Strategist | `/store-assets/` | `@.ai/agents/store-copywriter.md` | 🟢 Completed |
 | Creative Director & Brand Designer | `/design/` | `@.ai/agents/brand-designer.md` | 🟢 Completed |
 | Organic Growth Hacker | `/marketing/` | `@.ai/agents/growth-hacker.md` | 🟢 Completed |
-| Repository & Docs Copywriter | Root `/` | `@.ai/agents/docs-copywriter.md` | 🟡 Provisioned |
+| Repository & Docs Copywriter | Root `/` | `@.ai/agents/docs-copywriter.md` | 🟢 Completed |
 
 ## Persona Library
 See `/.ai/personas/` for available expert mindsets.
