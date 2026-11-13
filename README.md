@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <img src="design/store-screenshots/screenshot-1-hero-editor.png" alt="LinkedIn Rich Text Shortcuts Editor Screenshot" width="800" />
+  <img src="design/store-screenshots/screenshot-1-hero-shortcut.png" alt="LinkedIn Rich Text Shortcuts Editor Screenshot" width="800" />
 </p>
 
 ---

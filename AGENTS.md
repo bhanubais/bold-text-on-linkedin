@@ -23,7 +23,7 @@ End-to-End Venture: this project spans engineering, Chrome Web Store listing, ma
 1. **Never modify files outside your designated directory** without explicit CAIO approval.
 2. **Always read your persona and skill files** before starting work.
 3. **Execution Runtime:** Standardize strictly on **Bun** (`bun test`, `bun run`). Node is deprecated for this workspace.
-4. **Clean Punctuation (Zero Big-Dashes):** Never use em-dashes (`—`) or en-dashes (`–`) anywhere in copy, marketing posts, documentation, or code comments. Use clean punctuation: commas, periods, colons, parentheses, or simple hyphens (`-`).
+4. **Clean Punctuation (Zero Big-Dashes):** Never use em dash or en dash characters anywhere in copy, marketing posts, documentation, or code comments. Use clean punctuation: commas, periods, colons, parentheses, or simple hyphens (`-`).
 5. **Agent Completion & Tracking Protocol:** Whenever an agent finishes its work, it must:
    - Check off all completed items in its state file under `/.ai/agents/<agent-name>.md`.
    - Record an execution log entry with timestamps in its state file.
@@ -34,6 +34,7 @@ End-to-End Venture: this project spans engineering, Chrome Web Store listing, ma
 8. **No console.log in production.** Remove all debug logging before final build.
 9. **Manifest V3 compliance** is non-negotiable. No Manifest V2 APIs.
 10. **The extension icon must be declared** in the manifest at 16, 32, 48, and 128px sizes.
+11. **Branch & Pull Request Protocol:** Never commit directly to `main`. All work must be executed on a dedicated feature branch (`feat/<task-name>`). Upon completion and successful `bun test`, push the branch with `git push -u origin <branch-name>` and provide the Pull Request URL for founder approval and merge.
 
 ## Active Agents
 | Agent | Domain | State File | Status |
@@ -43,9 +44,11 @@ End-to-End Venture: this project spans engineering, Chrome Web Store listing, ma
 | Creative Director & Brand Designer | `/design/` | `@.ai/agents/brand-designer.md` | 🟢 Completed |
 | Organic Growth Hacker | `/marketing/` | `@.ai/agents/growth-hacker.md` | 🟢 Completed |
 | Repository & Docs Copywriter | Root `/` | `@.ai/agents/docs-copywriter.md` | 🟢 Completed |
+| Web Systems Architect | `/docs/` | `@.ai/agents/web-architect.md` | ⚪ Queued for Next PR |
 
 ## Persona Library
 See `/.ai/personas/` for available expert mindsets.
 
 ## Skill Library
 See `/.ai/skills/` for available capability modules.
+

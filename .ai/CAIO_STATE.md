@@ -55,14 +55,15 @@ Acknowledge initialization by stating the current macro-state and the immediate 
 |---|---|---|---|---|---|
 | **Track 1: Engineering** | `extension-architect` | `/src/` | `@.ai/agents/extension-architect.md` | 🟢 Completed | MV3 manifest, Mac `Cmd+B` support, resilient Tiptap DOM detection, zero permissions, 16/32/48/128px icons, `background.js` action handler, 7 Bun tests passing, packaged `dist/LinkedIn-Rich-Text-Shortcuts-v2.0.0.zip`. |
 | **Track 2: Store ASO & Trust** | `store-copywriter` | `/store-assets/` | `@.ai/agents/store-copywriter.md` | 🟢 Completed | `store-assets/description.md` (125/132 char short desc, keyword-rich copy), `store-assets/privacy-policy.md` (verified repo URLs, zero data collection), `store-assets/single-purpose.md` (CWS review & Safe Browsing justification), `store-assets/changelog.md`. |
-| **Track 3: Brand & Visuals** | `brand-designer` | `/design/` | `@.ai/agents/brand-designer.md` | 🟢 Completed | Full visual suite: 440x280 / 920x680 / 1400x560 promo tiles, 5x 1280x800 CWS store screenshots, social banners (LinkedIn, Twitter/X, Product Hunt), 5-slide viral carousel, and master design catalog in `design/README.md`. |
-| **Track 4: Growth Marketing** | `growth-hacker` | `/marketing/` | `@.ai/agents/growth-hacker.md` | 🟢 Completed | 5 LinkedIn posts (founder story, carousel copy, Unicode trap, Mac announcement, build-in-public), Twitter 7-tweet launch thread, complete Product Hunt launch kit, and Day 1-14 master playbook in `marketing/README.md`. |
+| **Track 3: Brand & Visuals** | `brand-designer` | `/design/` | `@.ai/agents/brand-designer.md` | 🟡 Remediating (`feat/design-assets-migration`) | Purging synthetic HTML renders, promoting authentic 3D masters from `/images/` into `/design/store-screenshots/` and `/design/promo-tiles/`. |
+| **Track 4: Growth Marketing** | `growth-hacker` | `/marketing/` | `@.ai/agents/growth-hacker.md` | 🟢 Completed | 5 LinkedIn posts, Twitter 7-tweet launch thread, complete Product Hunt launch kit, and Day 1-14 master playbook in `marketing/README.md`. |
 | **Track 5: Repository Documentation** | `docs-copywriter` | Root `/` | `@.ai/agents/docs-copywriter.md` | 🟢 Completed | Official root `README.md`: High-visibility hero banner + badges + Unicode Trap comparison + shortcut table + Bun developer quickstart + architecture & privacy disclosures. |
+| **Track 6: Web Systems & GitHub Pages** | `web-architect` | `/docs/` | `@.ai/agents/web-architect.md` | ⚪ Queued for Next PR | Complete static website in `/docs/` for free GitHub Pages hosting (`index.html`, `privacy.html`, `support.html`, `changelog.html`). |
 
 ---
 
-## 4. Current Working State & Macro Milestone
+## 4. Current Working State & Active Branch
 
-- **State:** **All 5 Swarm Tracks are 100% complete, verified, and production-ready.**
-- **Macro Milestone:** The entire End-to-End Venture transformation from buggy v1.0 prototype to enterprise-grade, Manifest V3 production business is finished.
-- **Immediate Founder Action:** Upload `dist/LinkedIn-Rich-Text-Shortcuts-v2.0.0.zip` to the Chrome Developer Dashboard, paste store copy and justifications from `/store-assets/`, upload visual assets from `/design/`, and initiate the organic marketing sequence from `/marketing/`.
+- **Active Branch:** `feat/design-assets-migration`
+- **Rule:** All work happens in isolated feature branches. Upon completion, we push the branch and generate a Pull Request link for the founder to review and merge into `main` to accumulate event points.
+- **Immediate Task:** Execute asset remediation with the **Creative Director (`brand-designer`)** on branch `feat/design-assets-migration`.

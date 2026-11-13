@@ -68,24 +68,19 @@ Product Hunt allows up to 5-8 gallery assets. Use this exact sequence:
    - Shows: High-contrast 3D keycap icon, hero headline, and before-and-after text contrast.
 
 2. **Screenshot 1: The Editor in Action:**  
-   - File: `design/store-screenshots/screenshot-1-hero-editor.png` (1280 x 800 px)  
+   - File: `design/store-screenshots/screenshot-1-hero-shortcut.png` (1280 x 800 px)  
    - Shows: The LinkedIn post composer with clean bold text applied natively.
 
-3. **Screenshot 2: 3 Simple Steps:**  
-   - File: `design/store-screenshots/screenshot-2-how-it-works.png` (1280 x 800 px)  
-   - Shows: Select Text -> Hit Shortcut -> Native Bold Applied.
+3. **Screenshot 2: Before and After Comparison:**  
+   - File: `design/store-screenshots/screenshot-2-before-after.png` (1280 x 800 px)  
+   - Shows: Side-by-side contrast between unformatted and bold formatted LinkedIn post drafts.
 
-4. **Screenshot 3: Native Bold vs. Broken Unicode Fonts:**  
-   - File: `design/store-screenshots/screenshot-3-native-vs-unicode.png` (1280 x 800 px)  
-   - Shows: Visual breakdown exposing why third-party font generators break screen readers and SEO.
-
-5. **Screenshot 4: Cross-Platform & Universal Support:**  
-   - File: `design/store-screenshots/screenshot-4-universal-support.png` (1280 x 800 px)  
-   - Shows: Windows `Ctrl+B` and Mac `Cmd+B` working across feed posts, comments, replies, and DMs.
-
-6. **Screenshot 5: Privacy First Guarantee:**  
-   - File: `design/store-screenshots/screenshot-5-privacy-first.png` (1280 x 800 px)  
-   - Shows: Zero tracking, zero analytics, zero data storage, Manifest V3 security.
+4. **Screenshot 3: In-Situ Live LinkedIn Interface:**  
+   - File: `design/store-screenshots/screenshot-3-in-situ-editor.png` (1280 x 800 px)  
+   - Shows: Real LinkedIn editor composer with shortcut trigger in production environment.
+5. **Store Promo Asset: 3D Keycap Marquee Banner:**  
+   - File: `design/promo-tiles/marquee-banner-1400x560.png` (1400 x 560 px)  
+   - Shows: High-resolution brand showcase featuring 3D keycaps and native LinkedIn post.
 
 ---
 
