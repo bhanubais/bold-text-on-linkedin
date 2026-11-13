@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
-    "test": "bun test ./.ai/evals/content-script.test.js"
+    "test": "bun test ./.ai/evals/content-script.test.js",
+    "pack": "powershell -Command \"Compress-Archive -Path 'src/*' -DestinationPath ('dist/LinkedIn-Rich-Text-Shortcuts-v' + (Get-Content 'src/manifest.json' | ConvertFrom-Json).version + '.zip') -Force\""
   }
 }
